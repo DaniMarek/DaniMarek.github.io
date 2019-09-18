@@ -4,64 +4,132 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<title>Daniela the Dev</title>
 </head>
+
 <body>
-	<div id="container">
-		<div id="header">
-			<h1>Welcome to my Portfolio!</h1>
-			<nav id="navbar">
-				<ul>
-					<li>
-						<h3><a href="https://github.com/DaniMarek">Github</a></h3>
-					</li>
-					<li>
-						<h3><a href="https://www.linkedin.com/in/daniela-marek">LinkedIn</a></h3>
-					</li>
-					<li>
-						<h3><a href="mailto:Dramenika@outlook.com">Email</a></h3>
-					</li>
-					<li>
-						<h3><a href="https://www.canva.com/design/DADWIAR7jic/RIcrjZVzoIZ7CYvxMSt2Ng/view?utm_content=DADWIAR7jic&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">Resume</a></h3>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div class="banner">
-			<h4>Hello! My name is Daniela Marek and I am a full-stack developer. My background in Cultural Anthropology encourages me to develop technology with a focus on human-centered design. My goal is to grow with a strong team that sees no two solutions or projects as the same, isn't afraid to think outside the box, and is environmentally conscious.</h4>
-		</div>
-		<div class="banner">
-			<ul>
-				<li>
-					<h3>Password Generator</h3>
-					<img class="image" src="img/pw_gen.jpg">
-					<p>Based on a random number algorithm I learned in Python, this application was created to produce passwords that are secure and effective. I used Ubuntu Bash to test the algorithm. I used a CSRF token to create a form resubmission notice that pops up when the page is refreshed. I chose to use Bootstrap for my front end for practice since I was learning it. I originally deployed the application to AWS using Ubuntu Bash shell scripting.</p>
-					<h3><a href="http://54.204.68.98/">Try it out!</a></h3>
-				</li>
+	<!-- Welcome Banner -->
+	<div class="jumbotron text-center">
+		<h1>Welcome to my Portfolio!</h1>
+		<p>Daniela Marek: front end developer with full stack knowledge</p>
+	</div>
 
-				<li>
-					<h3>Mars Attacks</h3>
-					<img class="image" src="img/marsattacks.jpg">
-					<p>This is the first game I built using front-end technologies HTML, CSS, and JavaScript. Each card responds to a click by flipping to reveal a symbol on the other side. Only two cards can be chosen at a time. If the cards match, they go up in flames, if they do not, they flip back to their original position.</p>
-					<h3><a href="https://danimarek.github.io/SailorMarsAttack/">Try it out!</a></h3>
+	<!-- Collapsible Navbar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="topNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item col-sm-3">
+					<a class="nav-link" href="https://github.com/DaniMarek">
+						<img src="img/github.png" alt="Github icon" class="icons">
+					</a>
+					<h4><a class="nav-link" href="https://github.com/DaniMarek">Github</a></h4>
 				</li>
-
-				<li>
-					<h3>Message Board</h3>
-					<img class="image" src="img/maintenance.jpg">
-					<p>I designed this application based on a wireframe concept. For the MySQL database and routed controllers using Django framework. I used Bootstrap  to build the front-end because I was pressed for time. Using Amazon AWS (EC2), the application was deployed from Ubuntu Bash shell scripting.</p>
-					<h3><a href="https://danimarek.github.io/UnderMaintenance/">Try it out!</a></h3>
+				<li class="nav-item col-sm-3">
+					<a class="nav-link" href="https://www.linkedin.com/in/daniela-marek">
+						<img src="img/linkedin_blk.png" alt="LinkedIn icon" class="icons">
+					</a>
+					<h4><a class="nav-link" href="https://www.linkedin.com/in/daniela-marek">LinkedIn</a></h4>
 				</li>
-
-				<li>
-					<h3>Playlist Suggestions</h3>
-					<img class="image" src="img/maintenance.jpg">
-					<p>I designed this application based on a wireframe concept. I planned the models on Rails that set the structure of the database in PostgreSQL. My controllers were routed in the Rails Framework as well. I used Bootstrap  to build the front-end because I was pressed for time.  I deployed the application to AWS using GitBash shell scripting. </p>
-					<h3><a href="https://danimarek.github.io/UnderMaintenance/">Try it out!</a></h3>
+				<li class="nav-item col-sm-3">
+					<a class="nav-link" href="mailto:Dramenika@outlook.com">
+						<img src="img/email_tilt.png" alt="Email icon" class="icons">
+					</a>
+					<h4><a class="nav-link" href="mailto:Dramenika@outlook.com">Email</a></h4>
+				</li>
+				<li class="nav-item col-sm-3">
+					<a class="nav-link" href="https://www.canva.com/design/DADWIAR7jic/RIcrjZVzoIZ7CYvxMSt2Ng/view?utm_content=DADWIAR7jic&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
+						<img src="img/openfolderdoc.png" alt="Resume icon" class="icons">
+					</a>
+					<h4><a class="nav-link" href="https://www.canva.com/design/DADWIAR7jic/RIcrjZVzoIZ7CYvxMSt2Ng/view?utm_content=DADWIAR7jic&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">Resume</a></h4>
 				</li>
 			</ul>
 		</div>
-	</div>
+	</nav>
 
+	<!-- About Section -->
+	<div class="container">
+		<div class="row">
+			<h4>Hello! My name is Daniela Marek and I am a full-stack developer. My background in Cultural Anthropology encourages me to develop technology with a focus on human-centered design. My goal is to grow with a strong team that sees no two solutions or projects as the same, isn't afraid to think outside the box, and is environmentally conscious.</h4>
+		</div>
+
+	<!-- Projects -->
+
+		<div class="row">
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header">	
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">	
+							<h3>Password Generator</h3>
+							<img class="image" src="img/pw_gen.jpg">
+						</a>
+					</div>
+					<div id="collapseOne" class="collapse" data-parent="#accordion">	
+						<div class="card-body">
+							<p>Based on a random number algorithm I learned in Python, this application was created to produce passwords that are secure and effective. I used Ubuntu Bash to test the algorithm. I used a CSRF token to create a form resubmission notice that pops up when the page is refreshed. I chose to use Bootstrap for my front end for practice since I was learning it. I originally deployed the application to AWS using Ubuntu Bash shell scripting.</p>
+							<h3><a href="http://54.204.68.98/">Try it out!</a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">	
+							<h3>Mars Attacks</h3>
+							<img class="image" src="img/marsattacks.jpg">
+						</a>
+					</div>	
+					<div id="collapseTwo" class="collapse" data-parent="#accordion">	
+						<div class="card-body">
+							<p>This is the first game I built using front-end technologies HTML, CSS, and JavaScript. Each card responds to a click by flipping to reveal a symbol on the other side. Only two cards can be chosen at a time. If the cards match, they go up in flames, if they do not, they flip back to their original position.</p>
+							<h3><a href="https://danimarek.github.io/SailorMarsAttack/">Try it out!</a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">	
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">	
+							<h3>Message Board</h3>
+							<img class="image" src="img/maintenance.jpg">
+						</a>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">	
+						<div class="card-body">
+							<p>I designed this application based on a wireframe concept. For the MySQL database and routed controllers using Django framework. I used Bootstrap  to build the front-end because I was pressed for time. Using Amazon AWS (EC2), the application was deployed from Ubuntu Bash shell scripting.</p>
+							<h3><a href="https://danimarek.github.io/UnderMaintenance/">Try it out!</a></h3>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+							<h3>Playlist Suggestions</h3>
+							<img class="image" src="img/maintenance.jpg">
+						</a>
+					</div>
+					<div id="collapseFour" class="collapse" data-parent="#accordion">	
+						<div class="card-body">
+							<p>I designed this application based on a wireframe concept. I planned the models on Rails that set the structure of the database in PostgreSQL. My controllers were routed in the Rails Framework as well. I used Bootstrap  to build the front-end because I was pressed for time.  I deployed the application to AWS using GitBash shell scripting. </p>
+							<h3><a href="https://danimarek.github.io/UnderMaintenance/">Try it out!</a></h3>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Nerd Corner/ Footer -->
+	<div class="jumbotron text-center">
+		<a href="">
+			<img src="img/learning.png" alt="open book with lightbulb in the center" class="nerdimg">
+		</a>
+		<h3>Nerd Corner!</h3>
+		<a href="">
+			<p>In between projects, I like to learn stuff for fun. Here are a few things I've picked up so far.</p>
+		</a>
+	</div>
 </body>
 </html>

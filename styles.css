@@ -1,70 +1,74 @@
 *{
 	margin: 0;
-}
 
-#container{
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(#4D3942 80%, #6F5964 20%); 
-	background: #6F5964; /* For browsers that do not support gradients */
-	/*alternte background-color: #04f7d2*/
- 	background: -webkit-radial-gradient(#6F5964 30%, #544049 42%, #1C0C10 85%); /* Safari 5.1-6.0 */
-  	background: -o-radial-gradient(#6F5964 30%, #544049 42%, #1C0C10 85%); /* For Opera 11.6-12.0 */
-  	background: -moz-radial-gradient(#6F5964 30%, #544049 42%, #1C0C10 85%); /* For Firefox 3.6-15 */
-  	background: radial-gradient(#6F5964 30%, #544049 42%, #1C0C10 85%); /* Standard syntax */
+	/*background: #223d35; */
+
 	font-family: "Arial", sans-serif;
-	padding: 0px;
-	color: white;
-	text-align: center;
+	/*padding: 0px;*/
+	color: black;
+	/*text-align: center;*/
 }
 
-#header h1{
-	padding: 25px;
+.jumbotron{
+	margin-bottom: 0;
+	/*background-color: #f4511e;*/
+	/*background: #223d35;*/
+	color: black;
+	padding: 100px 25px;
 }
 
-#navbar ul{
-	display: inline-block;
+.navbar{
+	margin-bottom: 0;
+	/*background-color: pink;*/
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	/*color: green;*/
+}
+.navbar li a, .navbar .navbar-brand {
+	color: #7f8f93 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: black !important;
+	background-color: white !important;
+}
+/*
+
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.navitem li{
+	width: 100px;
+	padding: 0px, 45px, 0px, 50px;
+}
+
+*/
+
+.row{
+	margin: 30px, 0, 0, 0;
+	vertical-align: bottom;
 	width: 100%;
-	padding: 0px 54px;
-	list-style: none;
-	vertical-align: top;
+	padding: 15px;
 }
+.nav-item{
+	background: radial-gradient(#bcd3d3 80%, #cee0e0 20%); 
 
-#navbar li{
-	vertical-align: top;
-	display: inline-block;
-	width: 250px;
-	margin-right: 40px;
-	padding: 0px;
+	background: #cee0e0; /* For browsers that do not support gradients */
+	/*alternte background-color: #04f7d2*/
+ 	background: -webkit-radial-gradient(#cee0e0 30%, #abd3ca 42%, #d1f9f9 85%); /* Safari 5.1-6.0 */
+  	background: -o-radial-gradient(#cee0e0 30%, #abd3ca 42%, #d1f9f9 85%); /* For Opera 11.6-12.0 */
+  	background: -moz-radial-gradient(#cee0e0 30%, #abd3ca 42%, #d1f9f9 85%); /* For Firefox 3.6-15 */
+  	background: radial-gradient(#cee0e0 30%, #abd3ca 42%, #d1f9f9 85%); /* Standard syntax */
 }
-
-a{
-	color: #fa00ff;
-}
-
-.banner{
-	width: 100%;
-}
-
-.banner h4{
-	padding: 25px;
-}
-
-.banner ul{
-	display: inline-block;
-	width: 100%;
-	padding: 0px 54px;
-	list-style: none;
-	vertical-align: top;
-	margin-bottom: 95px;
-}
-.banner li{
-	width: 272px;
-	height: 449px;
-	vertical-align: top;
-	display: inline-block;
-	margin-right: 40px;
-	padding: 0px;
+.icons{
+	width: 50%;
+	border-radius: 100px;
 }
 
 .image{
